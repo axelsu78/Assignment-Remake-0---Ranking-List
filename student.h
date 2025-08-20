@@ -23,9 +23,9 @@ public:
     void calculateScore();
     int getScore() const;
     string getName() const;
-    void setName();
+    void setName(string name);
     std::unique_ptr<Params> getParams();
-    void setParams();
+    void setParams(std::unique_ptr<Params> params);
     void printInfo();
 
 };

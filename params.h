@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <iostream>
 
 using string = std::string;
 
@@ -44,13 +45,15 @@ class Params {
     public:
 
     int getGrade() const;
-    int getProbation() const;
+    bool getProbation() const;
     int getTAOrRA() const;
     int getAthlete() const;
 
-    int setGrade();
+    int setGrade(string grade);
     int setProbation();
-    int setTAOrRA();
-    int setAthlete();
+    int setTAOrRA(string position);
+    int setAthlete(string command);
+
+    string parseString(string original);
     
 };
